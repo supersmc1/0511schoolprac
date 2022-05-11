@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding:0;}
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #root>div{
+      width: 1920px;
+      height: 400px;
+      display: flex;
+      margin-top: 50px;
+    }
+
+    #root>div>div:nth-child(1){
+      width: 960px;
+      height: 400px;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    #root>div>div:nth-child(1)>div{
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 100px;
+      height: 60px;
+      position:absolute;
+    }
+
+    .apple{
+      width:500px;
+      color: rgba(255, 0, 0,0.5);
+      top:250px;
+    }
+
+    .orange{
+      width:500px;
+      color:rgba(255, 115, 0, 0.5);
+      top:280px;
+      z-index: 6;
+
+    }
+
+    .lemon{
+      width:500px;
+      color:rgba(238, 255, 0,0.5);
+      top:300px;
+      z-index: 1;
+
+    }
+
+    .grape{
+      width:500px;
+      color: rgba(174, 0, 255,0.5);
+      top:320px;
+      z-index: 3;
+
+    }
+
+    .blue{
+      width:500px;
+      color: rgba(4, 0, 255, 0.5);
+      top:360px;
+      z-index: 2;
+
+
+    }
+
+    .abo{
+      width:500px;
+      color: rgba(9, 255, 0, 0.5);
+      top:400px;
+      z-index: 3;
+
+    }
+
+
+
+    #root>div>div:nth-child(2){
+      width: 960px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #c4c4c4;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div>
+        <div class="apple">apple</div>
+        <div class="orange">orange</div>
+        <div class="lemon">lemon</div>
+        <div class="grape">grape</div>
+        <div class="blue">blueberry</div>
+        <div class="abo">abokado</div>
+      </div>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi ratione</div>
+    </div>
+  </div>
+</body>
+</html>

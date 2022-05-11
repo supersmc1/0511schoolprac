@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding:0;}
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #cli{
+      width: 200px;
+      height: 200px;
+      font-size: 50px;
+    }
+
+   #root>div{
+     width: 80px;
+     height: 80px;
+     border-radius: 40%;
+     background-color: lemonchiffon;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <button id="cli">click</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('cli');
+    let real = true
+    btn.addEventListener('click',function(){
+    if( real === true){
+      console.log('click');
+     let divv = document.createElement('div')
+     root.appendChild(divv)
+     divv.textContent = "나는팝업"
+     real = false
+     console.dir(root.appendChild(divv))
+    }else{
+     
+    }
+     
+    });
+  </script>
+</body>
+</html>

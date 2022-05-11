@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 3000px;
+      background:linear-gradient(0deg,#ccc,#333);
+    }
+    #topp{
+      width: 5vw;
+      height: 5vh;
+      position:fixed;
+      top:900px;
+      left:1000px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <button id="topp">TOP</button>
+  </div>
+  
+  <script>
+    const topp = document.getElementById('topp')
+    const scrolll = window.scrollY
+    console.log(topp);
+    console.log(window.scrollY)
+
+    topp.addEventListener('click',(event)=>{
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      }) 
+    })
+
+    topp.addEventListener('scroll',function(){
+      if(scrolll === 0){
+        topp.style.display='none'
+      }
+    });
+      
+  </script>
+</body>
+</html>
